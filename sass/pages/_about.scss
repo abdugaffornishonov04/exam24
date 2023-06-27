@@ -1,0 +1,118 @@
+.about-about {
+  margin-top: 120px;
+  padding-bottom: 130px;
+
+  .a-a-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    img {
+      @media (max-width:750px) {
+        width: 100%;
+      }
+    }
+
+    .a-a-text1 {
+      margin-bottom: 30px;
+      display: flex;
+      width: 720px;
+      flex-direction: column;
+      flex-shrink: 0;
+      color: #242424;
+      font-size: 20px;
+      line-height: 32px;
+      letter-spacing: 0.8px;
+      opacity: 0.8;
+
+      @media (max-width:750px) {
+        width: 100%;
+      }
+    }
+
+    .a-a-text2 {
+      margin-top: 30px;
+      display: flex;
+      width: 720px;
+      flex-direction: column;
+      flex-shrink: 0;
+      color: #242424;
+      font-size: 20px;
+      line-height: 32px;
+      letter-spacing: 0.8px;
+      opacity: 0.8;
+
+      @media (max-width:750px) {
+        width: 100%;
+      }
+    }
+  }
+}
+
+.backtop {
+  position: fixed;
+  background-color: black;
+  bottom: 30px;
+  right: 20px;
+  z-index: 1000;
+  text-decoration: none;
+  padding: 20px 30px;
+  border-radius: 60px;
+  border: 2px solid transparent;
+  transition: 1s;
+  box-shadow: 10px 10px 68px 0px rgba(153, 13, 13, 0.75);
+
+  @media (max-width:500px) {
+    display: none;
+  }
+
+  &:hover {
+    background-color: #BB2339;
+    color: #000;
+    border: 2px solid #000;
+  }
+}
+
+.contactusbuttonfixed {
+  position: fixed;
+  background-color: rgb(58, 27, 183);
+  color: #fff;
+  bottom: 110px;
+  right: 20px;
+  z-index: 1000;
+  text-decoration: none;
+  padding: 20px 30px;
+  border-radius: 60px;
+  border: 2px solid transparent;
+  transition: 1s;
+  box-shadow: 10px 10px 68px 0px rgba(189, 14, 14, 0.75);
+
+  @media (max-width:500px) {
+    display: none;
+  }
+
+  &:hover {
+    background-color: #BB2339;
+    color: rgb(58, 27, 183);
+    border: 2px solid rgb(58, 27, 183);
+  }
+}
+
+#loading {
+  position: fixed;
+  background-color: white;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 100;
+  transition: 0.5s;
+}
+
+#loading.loading-none {
+  opacity: 0;
+  z-index: -1;
+}

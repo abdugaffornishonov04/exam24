@@ -1,0 +1,19 @@
+@mixin title($color) {
+  color:$color;
+  font-size: 48px;
+  font-weight: 500;
+  letter-spacing: 1.44px;
+  text-transform: capitalize;
+}
+
+ @mixin btn {
+   padding: 8px 32px;
+   border-radius: 100px;
+   border: 1px solid #FFF;
+   color: #FFF;
+   font-size: 16px;
+   font-weight: 700;
+   line-height: 175%;
+   letter-spacing: 0.64px;
+   transition: 1s;
+ }

@@ -1,0 +1,134 @@
+@use "../layout/header";
+
+
+// menu-pack
+.menu-pack {
+  margin-top: 120px;
+
+  .menu-pack-container {
+    .menu-pack__subtext {
+      .menu-pack__subtext__span1 {
+        color: #B0B0B0;
+      }
+
+      .menu-pack__subtext__span2 {
+        color: #BB2339;
+      }
+
+    }
+  }
+}
+
+.backtop {
+  position: fixed;
+  background-color: black;
+  bottom: 30px;
+  right: 20px;
+  z-index: 1000;
+  text-decoration: none;
+  padding: 20px 30px;
+  border-radius: 60px;
+  border: 2px solid transparent;
+  transition: 1s;
+  box-shadow: 10px 10px 68px 0px rgba(153, 13, 13, 0.75);
+
+  @media (max-width:500px) {
+    display: none;
+  }
+
+  &:hover {
+    background-color: #BB2339;
+    color: #000;
+    border: 2px solid #000;
+  }
+}
+
+.contactusbuttonfixed {
+  position: fixed;
+  background-color: rgb(58, 27, 183);
+  color: #fff;
+  bottom: 110px;
+  right: 20px;
+  z-index: 1000;
+  text-decoration: none;
+  padding: 20px 30px;
+  border-radius: 60px;
+  border: 2px solid transparent;
+  transition: 1s;
+  box-shadow: 10px 10px 68px 0px rgba(189, 14, 14, 0.75);
+
+  @media (max-width:500px) {
+    display: none;
+  }
+
+  &:hover {
+    background-color: #BB2339;
+    color: rgb(58, 27, 183);
+    border: 2px solid rgb(58, 27, 183);
+  }
+}
+
+.menu__pack__tab {
+  // display: flex !important;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.menu-pack__mainbox {
+  margin-right: 50px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 428px !important;
+  height: 844px;
+  flex-shrink: 0;
+  border-radius: 20px;
+  background-color: #BB2339 !important;
+}
+
+.menu-pack__title {
+  margin-top: 50px;
+  margin-bottom: 40px;
+  margin-left: 40px;
+  color: #fff;
+}
+
+.nav-pills2 .nav-link.active {
+  margin-left: 40px;
+  background-color: #BB2339 !important;
+  color: #BB2339 !important;
+  border-radius: 100px;
+  border: 1px solid #fff !important;
+  background: #fff !important;
+}
+
+.nav-pills2 .nav-link {
+  margin-left: 40px;
+  margin-right: 10px;
+  border-radius: 100px !important;
+  border: 1px solid #fff !important;
+  color: #fff;
+}
+
+.dishes__card {
+  margin-bottom: 30px;
+}
+
+#loading {
+  position: fixed;
+  background-color: white;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 100;
+  transition: 0.5s;
+}
+
+#loading.loading-none {
+  opacity: 0;
+  z-index: -1;
+}

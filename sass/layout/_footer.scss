@@ -1,0 +1,177 @@
+// footer
+
+.footer {
+  background-color: #BB2339;
+  color: #fff;
+
+
+  .footer-container {
+    .footer__box {
+      margin-top: 341px;
+      position: relative;
+
+      .footer__float {
+        width: 1400px !important;
+        left: -5%;
+        top: -300px;
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: #BB2339;
+        border-radius: 20px;
+        border: 1px solid rgba(255, 255, 255, 0.40);
+        box-shadow: 22px 30px 95px 1px rgba(86, 86, 86, 0.20);
+
+        .footer__float__subtext {
+          margin-top: 64px;
+          color: #FFF;
+          font-size: 23px;
+          font-weight: 700;
+          line-height: 130%;
+          letter-spacing: 0.92px;
+          text-transform: capitalize;
+        }
+      }
+
+      .footer__items__wrapper {
+        margin-top: 380px;
+        display: flex;
+        align-items: center;
+
+        .footer__col__start ul {
+          list-style-type: none;
+          display: flex;
+          flex-direction: column;
+          text-align: center;
+
+          & li {
+            margin-bottom: 10px;
+            color: #FFF;
+            font-size: 16px;
+            font-family: Open Sans;
+            line-height: 26px;
+            letter-spacing: 0.64px;
+            opacity: 0.7;
+          }
+
+        }
+
+        .footer__col__center {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+
+          #footer__logo {
+            margin-top: 100px;
+          }
+
+          .footer__quote {
+            margin-top: 32px;
+            margin-bottom: 45px;
+            color: #FFF;
+            text-align: center;
+            font-size: 16px;
+            line-height: 26px;
+            letter-spacing: 0.64px;
+          }
+
+          .footer__ending {
+            margin-top: 60px;
+            color: #FFF !important;
+            text-align: center;
+            font-size: 16px;
+            line-height: 175%;
+            letter-spacing: 0.64px;
+          }
+        }
+
+        .footer__col__end ul {
+          list-style-type: none;
+          display: flex;
+          flex-direction: column;
+          text-align: center;
+
+          & li {
+            margin-bottom: 10px;
+            color: #FFF;
+            font-size: 16px;
+            font-family: Open Sans;
+            line-height: 26px;
+            letter-spacing: 0.64px;
+            opacity: 0.7;
+          }
+        }
+      }
+
+      .footer__float__title {
+        margin-bottom: 24px;
+        color: #fff;
+        text-align: center;
+        font-weight: 500;
+        line-height: 130%;
+        letter-spacing: 1.44px;
+        text-transform: capitalize;
+      }
+
+      .footer__float__text {
+        margin-bottom: 64px;
+        color: #FFF;
+        text-align: center;
+        font-size: 16px;
+        line-height: 175%;
+        letter-spacing: 0.64px;
+        opacity: 0.8;
+      }
+
+      form input {
+        margin-bottom: 64px;
+        padding-left: 18px;
+        width: 605px;
+        height: 52px;
+        color: #AAA;
+        background-color: transparent;
+        border-radius: 100px;
+        border: 1px solid rgba(245, 239, 219, 0.50);
+        outline: none;
+
+        &:hover {
+          border-color: #fff;
+          color: #fff !important;
+          ;
+        }
+      }
+
+      .footer__float__link {
+        text-decoration: none;
+        color: #FFF;
+        font-size: 16px;
+        font-weight: 700;
+        line-height: 175%;
+        letter-spacing: 0.64px;
+        padding: 12px 32px;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        border-radius: 100px;
+        border: 1px solid #FFF;
+
+        &:hover {
+          background-color: #fff;
+          color: #BB2339;
+        }
+      }
+    }
+  }
+}
+
+#footer__item__title {
+  list-style: none;
+  margin-bottom: 24px;
+  color: #FFF;
+  font-size: 32px;
+  line-height: 130%;
+  letter-spacing: 1.28px;
+  text-transform: capitalize;
+  opacity: 1;
+}
